@@ -17,13 +17,14 @@ function doPost(e) {
   //送られたLINEメッセージを取得
   var user_message = json.events[0].message.text;
 
-  //返信する内容を作成
+ /* //返信する内容を作成
   var reply_messages;
   var random = Math.floor( Math.random() *10 );
   if(random == 0) {
     reply_messages = ['腹パンね',];
   }
- else if ('こんにちわ' == user_message) {
+ else*/
+ if ('こんにちわ' == user_message) {
     //かっこいいと入力された際
     reply_messages = ['殴るぞ',];
 
@@ -46,7 +47,7 @@ function doPost(e) {
   });
   UrlFetchApp.fetch(line_endpoint, {
     'headers': {
-      'Content-Type': 'application/json; charset=UTF-8',
+      'Content-Type': 'application/json',
       'Authorization': `Bearer ${process.env.CHANNEL_TOKEN}`
     },
     'method': 'post',
