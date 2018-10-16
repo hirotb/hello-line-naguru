@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve":"netlify-lambda serve src/",
-    "build":"netlify-lambda build src/"
-
+    "serve": "netlify-lambda serve src/",
+    "build": "netlify-lambda build src/"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/hirotb/hello-line-naguru#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "moment": "^2.22.2",
     "netlify-lambda": "^1.0.2"
   }
