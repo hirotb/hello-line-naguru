@@ -1,0 +1,27 @@
+{
+  "name": "hello-line",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve":"netlify-lambda serve src/",
+    "build":"netlify-lamda build src/"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirotb/hello-line-naguru.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirotb/hello-line-naguru/issues"
+  },
+  "homepage": "https://github.com/hirotb/hello-line-naguru#readme",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "netlify-lambda": "^1.0.2"
+  }
+}
